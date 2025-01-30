@@ -1,9 +1,10 @@
 
 import './App.css';
+import AboutMe from './sections/about/aboutMe';
 import Hether from './components/heather/heather';
-import MainPage from './components/mainPage/mainPage';
-
-import ParticlesComponent from './components/particles/particles'; 
+import MainPage from './sections/mainPage/mainPage';
+import ParticlesComponent from './components/particles/particles';
+import Projects from './sections/projects/projects';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <ParticlesComponent id="particles"/>
       <Hether/>
       <MainPage/>
+      <AboutMe/>
+      <Projects/>
     </div>
   );
 }

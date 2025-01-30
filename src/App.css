@@ -11,3 +11,12 @@
   background-color: #0C1015;
 
 }
+
+.section-container {
+  height: 90vh;
+  border: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}

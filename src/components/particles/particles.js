@@ -36,6 +36,7 @@ const ParticlesComponent = (props) => {
         color: {
           value: "",
         },
+        
       },
       fpsLimit: 120,
       interactivity: {
@@ -78,7 +79,7 @@ const ParticlesComponent = (props) => {
           },
           random: true,
           speed: 1,
-          straight: false,
+          straight: true,
         },
         number: {
           density: {

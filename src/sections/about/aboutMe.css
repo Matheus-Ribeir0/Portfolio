@@ -1,0 +1,29 @@
+.about-me{
+    height: 90vh;
+    border: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.about-picture {
+    width: 331px;
+    height: 331px;
+    border-radius: 50%;
+    background-color: #0F6EFD;
+    margin: 50px;
+}
+
+.about-text{
+    width: 771px;
+    height: 579px;
+
+    margin: 50px;
+    font-size: 22px;
+}
+
+.blue-color{
+    color: #0F6EFD;
+}

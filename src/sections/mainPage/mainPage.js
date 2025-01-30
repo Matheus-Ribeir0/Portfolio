@@ -1,7 +1,8 @@
 import "./mainPage.css"; 
 const MainPage = (props) => {
     return (
-        <div className="main_page">
+        <div className="gradient-div">
+            <div className="main_page">
             <div className="text-section">
                     
                     <h2>Hello World <span class="wave">👋</span></h2>
@@ -13,13 +14,18 @@ const MainPage = (props) => {
                 
                 <button className="button">let's connect</button>
             </div>
+            
             <div className="image-section">
 
             </div>
             <div className="nav_bar">
 
             </div>
+            
         </div>
+        <span className="gradient"></span>
+        </div>
+        
     );
 
 }
