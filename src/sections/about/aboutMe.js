@@ -1,8 +1,11 @@
 import "./aboutMe.css";
+import Titles from "../../components/titles/titles";
 
 const AboutMe = (props) => {
     return (
-        <div className="about-me">
+        <div >
+            <Titles title="About-me"/>
+            <div className="about-me">
             <div className="about-picture">
 
             </div>
@@ -23,6 +26,7 @@ const AboutMe = (props) => {
                     Let's create something amazing together!</span>
                 </p>
 
+            </div>
             </div>
         </div>
     )

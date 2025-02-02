@@ -1,0 +1,69 @@
+/* Definindo a fonte padrão para o site */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Estilos do contêiner de navegação */
+.navigation_container {
+  width: 120px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh; 
+  z-index: 2; /* Z-index menor para ficar atrás do footer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;  
+}
+
+/* Estilos dos links de navegação */
+.nav-links {
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;  
+  align-items: center;
+  height: 80vh;  
+  white-space: nowrap; 
+}
+
+/* Estilo de cada link */
+.nav-links a {
+  color: #0F6EFD;  
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  writing-mode: vertical-rl;  
+  padding: 12px 16px;
+  margin: 15px 0;  
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre os links */
+.nav-links a:hover {
+  color: #FFFFFF; 
+  transform: translateX(10px); 
+}
+
+/* Detalhes - linha abaixo do texto ao passar o mouse */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0F6EFD;
+  transition: width 0.3s ease;
+}
+
+/* Expande a linha quando o mouse passa sobre o link */
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Adiciona uma animação de destaque ao link ao passar o mouse */
+.nav-links a:hover {
+  letter-spacing: 1px;
+}

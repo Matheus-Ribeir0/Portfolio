@@ -18,9 +18,7 @@ const MainPage = (props) => {
             <div className="image-section">
 
             </div>
-            <div className="nav_bar">
-
-            </div>
+            
             
         </div>
         <span className="gradient"></span>

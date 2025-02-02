@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative; /* Certifique-se de que o footer tem position relativa ou absoluta */
+  z-index: 4; /* Z-index maior para ficar na frente do navigation */
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 70px;
+}
+
+.logo {
+    height: 30px;
+    margin: 15px 20px;
+    position: absolute;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-icon {
+  color: #fff;
+  margin: 0 40px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer-icon:hover {
+  color: #0077b5; /* Cor do LinkedIn */
+}
+
+.footer-icon:first-child:hover {
+  color: #333; /* Cor do GitHub */
+}
