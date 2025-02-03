@@ -27,17 +27,21 @@ function App() {
       <div>
         
         <MainPage />
+        
         <div className='fade'>
           <div data-aos="fade-up" id="about-me">
             <AboutMe />
           </div>
           <div data-aos="fade-right" id="projects">
+          <div className='radial-color'></div>
             <Projects />
+            
           </div>
           <div data-aos="fade-up" id="tech-stack">
             <TechStack />
           </div>
           <div data-aos="fade-right" id="contact-me">
+          <div className='radial-color' style={{ bottom: "100px" }}></div>
             <ContactMe />
           </div>
         </div>

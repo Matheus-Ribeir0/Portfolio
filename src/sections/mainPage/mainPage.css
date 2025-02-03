@@ -30,8 +30,6 @@
 .text-type {
     display: flex;
     width: 700px;
-
-    
     margin-top: 100px;
 }
 
@@ -44,14 +42,6 @@
     width: 0;
     animation: typing 2.5s steps(22) forwards 4s, blink 0.5s step-end infinite;
 }
-
-
-.nav_bar {
-  
-    height: 700px;
-    width: 100px;
-}
-
 
 
 
@@ -105,13 +95,7 @@ h2 {
     }
   }
 
-  @keyframes blink {
-    50% {
-        border-color: transparent;
-        display: flex;
-        
-    }
-}
+  
 
 .button {
     width: 285px;
@@ -153,3 +137,50 @@ h2 {
     margin-top: -70px;
     margin-right: 100px;
 }
+
+
+/* Parte Mobile */
+
+@media (max-width: 1024px) {
+    
+  }
+  
+  /* Telas pequenas (celulares, até 768px) */
+  @media (max-width: 768px) {
+    .main_page{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+    .text-section {
+
+        margin: 150px 0px;
+        padding: 10px;
+        width: 100%;
+        opacity: 0; /* Começa invisível */
+        transform: translateX(-120%); /* Começa fora da tela à esquerda */
+        animation: slideIn 1.5s forwards; 
+       display: block;
+       justify-content: center;
+    }
+    h2 {
+        text-align: center;
+        font-size: 35px;
+        
+    }
+    .text-type{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: none;
+    }
+    .text-type h1{
+        font-size: 45px;
+        text-align: center;
+    }
+    .button{
+        margin: 70px 20%;
+    }
+  }

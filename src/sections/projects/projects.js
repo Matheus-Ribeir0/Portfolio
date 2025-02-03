@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import Titles from '../../components/titles/titles';
 import Card from '../../components/cards/card';
+import { GoChevronLeft , GoChevronRight } from 'react-icons/go';
 import './projects.css';
 
 const Projects = () => {
@@ -38,7 +39,13 @@ const Projects = () => {
     centerPadding: "50px",
     slidesToShow: 3,
     speed: 500,
-    initialSlide: 0
+    initialSlide: 0,
+    dots: true, // Ativa os pontos de navegação
+    customPaging: i => (
+      <div className="slick-dot"></div>
+    ),
+    nextArrow: <GoChevronRight className="slick-nav" />,
+    prevArrow: <GoChevronLeft className="slick-nav" />
   };
 
   const handleCardClick = (index) => {

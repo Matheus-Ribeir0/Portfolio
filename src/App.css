@@ -20,7 +20,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0C1015;
 
   position: relative; /* Permite que o z-index funcione */
   z-index: 2; /* Garante que fique na frente das partículas */
@@ -73,4 +72,12 @@
 /* A área do track horizontal */
 ::-webkit-scrollbar-track-piece {
   background-color: #0C1015;
+}
+
+.radial-color{
+  background: rgb(15,110,253);
+  background: radial-gradient(circle, rgba(15, 110, 253, 0.411) 0%, rgba(0,0,0,0) 50%);
+  width: 100%;
+  height: 1200px;
+  position: absolute;
 }

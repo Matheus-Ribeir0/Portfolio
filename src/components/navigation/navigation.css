@@ -67,3 +67,10 @@ body {
 .nav-links a:hover {
   letter-spacing: 1px;
 }
+
+@media (max-width: 768px) {
+  .navigation_container {
+    display: none;
+  }
+}
+  

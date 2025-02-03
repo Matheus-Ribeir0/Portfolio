@@ -53,4 +53,21 @@
     width: 50px;
     margin: 0 30px ;
   }
-  
+  @media (max-width: 1368px) {
+    .card_container {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      
+      border-radius: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 450px;
+      width: 290px;
+      margin: 30px;
+      /* glassmorphism */
+      backdrop-filter: blur(6px) saturate(200%);
+      -webkit-backdrop-filter: blur(6px) saturate(200%);
+      background-color: rgba(70, 70, 70, 0.48);
+      border-radius: 12px;
+    }
+  }

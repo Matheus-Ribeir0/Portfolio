@@ -1,13 +1,15 @@
 import "./aboutMe.css";
 import Titles from "../../components/titles/titles";
+import profilePicture from "../../assets/foto_perfil_cropada-removebg-preview.jpg"; // Importe a imagem da pasta assets
 
+//../../assets/foto_perfil_cropada.jpg
 const AboutMe = (props) => {
     return (
         <div >
             <Titles title="About-me"/>
             <div className="about-me">
             <div className="about-picture">
-
+                <img src={profilePicture} alt="Matheus Ribeiro" className="picture"/>
             </div>
             <div className="about-text">
                 <p>Hi there! 👋 I'm Matheus Ribeiro, a passionate and driven developer with a strong background in building dynamic and responsive web

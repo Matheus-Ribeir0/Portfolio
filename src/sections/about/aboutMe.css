@@ -1,10 +1,8 @@
 .about-me {
-    height: 90vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
     background: rgb(2,0,36);
     background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(12,16,21,1) 53%);
     position: relative; /* Garante que z-index funcione */
@@ -17,6 +15,9 @@
     border-radius: 50%;
     background-color: #0F6EFD;
     margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-text{
@@ -29,4 +30,29 @@
 
 .blue-color{
     color: #0F6EFD;
+}
+
+.picture {
+    width: 310px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .about-me {
+        display: block;
+    }
+    .about-picture{
+        margin: 20px auto;
+        width: 250px;
+        height: 250px;
+    }
+    .about-picture img {
+        width: 230px;
+    }
+    .about-text {
+        font-size: 18px;
+        width: 100%;
+        margin: 0 10px;
+        padding: 20px;
+    }
 }
