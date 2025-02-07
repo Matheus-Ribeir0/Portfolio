@@ -1,18 +1,28 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import Titles from '../../components/titles/titles';
 import Card from '../../components/cards/card';
-import { GoChevronLeft , GoChevronRight } from 'react-icons/go';
+import { GoChevronLeft, GoChevronRight } from 'react-icons/go';
 import './projects.css';
 
 const Projects = () => {
   const sliderRef = useRef(null);
+  const [slidesToShow, setSlidesToShow] = useState(window.innerWidth < 1000 ? 1.5 : 2.5);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSlidesToShow(window.innerWidth < 1200 ? 1 : 2.5);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const cards = [
     {
       id: 0,
       image: 'https://cdn.discordapp.com/attachments/881399184291397695/1334678444784484422/fullstack_page.png?ex=679d67aa&is=679c162a&hm=f20637c485ea7056bfe661b560ef8c2238c580d08c5596eae481c1cdc47705e8',
-      title: 'Fullstck Blog',
+      title: 'Fullstack Blog',
       technologies: ["devicon-react-original", "devicon-nodejs-line", "devicon-postgresql-plain"],
       description: "Desenvolvimento de um sistema de gerenciamento de tarefas usando React e Node.js."
     },
@@ -37,13 +47,11 @@ const Projects = () => {
     centerMode: true,
     infinite: true,
     centerPadding: "50px",
-    slidesToShow: 3,
+    slidesToShow, // Agora é dinâmico
     speed: 500,
     initialSlide: 0,
-    dots: true, // Ativa os pontos de navegação
-    customPaging: i => (
-      <div className="slick-dot"></div>
-    ),
+    dots: true,
+    customPaging: i => <div className="slick-dot"></div>,
     nextArrow: <GoChevronRight className="slick-nav" />,
     prevArrow: <GoChevronLeft className="slick-nav" />
   };

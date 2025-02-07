@@ -39,3 +39,14 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+
+@media (max-width: 768px) {
+  .tech-stack-item {
+    flex-direction: row;
+  }
+  
+  .tech-stack-row{
+    display: flex;
+    flex-direction: row;
+  }
+}

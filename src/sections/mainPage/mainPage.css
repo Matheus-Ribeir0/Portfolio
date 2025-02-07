@@ -183,4 +183,14 @@ h2 {
     .button{
         margin: 70px 20%;
     }
+    .image-section{
+
+        margin-right: 0px;
+        width: 100%;
+        height: 890px;
+        
+    }
+    .gradient-div{
+        margin-right: 0px;
+    }
   }

@@ -29,7 +29,7 @@
   position: fixed !important;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 80%;
   height: 100vh;
   z-index: 0; /* Mantém no fundo */
   pointer-events: none;
