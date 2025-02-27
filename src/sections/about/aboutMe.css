@@ -7,7 +7,6 @@
     background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(12,16,21,1) 53%);
     position: relative; /* Garante que z-index funcione */
     z-index: 2; /* Sobrepõe as partículas */
-    
   }
 
 .about-picture {
@@ -41,7 +40,7 @@
 @media (max-width: 768px) {
     .about-me {
         display: block;
-        height: 100vh;
+        height: 110vh;
     }
     .about-picture{
         margin: 20px auto;
@@ -52,7 +51,7 @@
         width: 230px;
     }
     .about-text {
-        font-size: 18px;
+        font-size: 16px;
         width: 95%;
         margin: 0 10px;
         padding: 20px;

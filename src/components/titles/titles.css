@@ -1,62 +1,86 @@
 .title-container {
-    box-sizing: border-box;
-    width: 254px;
-    height: 44px;
-    margin: 0 auto;
-    background: linear-gradient(90deg, #040404 0%, #0F0F0F 100%);
-    border: 1px solid #000000;
-    border-radius: 20px;
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Garante que o texto não ultrapasse os limites da div */
-    position: relative; /* Necessário para a animação */
+  box-sizing: border-box;
+  width: 254px;
+  height: 44px;
+  margin: 50px auto;
+  background: linear-gradient(90deg, #040404 0%, #0f0f0f 100%);
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Garante que o texto não ultrapasse os limites da div */
+  position: relative; /* Necessário para a animação */
 }
 
 .title-container:before {
-    position: absolute;
-    content: '';
-    display: inline-block;
-    top: -180px;
-    left: 0;
-    width: 30px;
-    height: 100%;
-    background-color: #0F6EFD;
-    animation: shiny-btn1 3s ease-in-out infinite;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #0f6efd;
+  animation: shiny-btn1 3s ease-in-out infinite;
 }
 
 .title-container:hover:before {
-    animation: shiny-btn1 15.5s ease-in-out infinite;
+  animation: shiny-btn1 15.5s ease-in-out infinite;
 }
 
 .text {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    letter-spacing: 1px;
-    background: linear-gradient(90deg, #696969 0%, #CFCFCF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    margin: 0; /* Remove margens adicionais */
-    padding: 0; /* Remove padding adicional */
-    line-height: 1; /* Ajusta a altura da linha */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #696969 0%, #cfcfcf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin: 0; /* Remove margens adicionais */
+  padding: 0; /* Remove padding adicional */
+  line-height: 1; /* Ajusta a altura da linha */
 }
 
 @-webkit-keyframes shiny-btn1 {
-    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
-    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
-    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
-    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
 }
 
 @keyframes shiny-btn1 {
-    0% { transform: scale(0) rotate(45deg); opacity: 0; }
-    80% { transform: scale(0) rotate(45deg); opacity: 0.5; }
-    81% { transform: scale(4) rotate(45deg); opacity: 1; }
-    100% { transform: scale(50) rotate(45deg); opacity: 0; }
+  0% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
 }

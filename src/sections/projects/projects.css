@@ -68,6 +68,9 @@
 
 /* Estilizando o carrossel para torná-lo responsivo */
 @media (max-width: 1557px) {
+  .text_projects{
+    max-width: 90%;
+  }
   .slider-container {
     margin-left: 0px;
     width: 100%;

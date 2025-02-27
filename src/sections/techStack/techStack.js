@@ -2,9 +2,7 @@ import React from "react";
 import "./techStack.css";
 import Titles from "../../components/titles/titles";
 
-
 function techStack() {
-  
   return (
     <div className="section-container">
       <Titles title="Tech-stack" />
@@ -111,8 +109,7 @@ function techStack() {
               />
               <p>React</p>
             </div>
-          </div>
-          <div className="tech-stack-row">
+
             <div className="tech-stack-item">
               <img
                 src="https://img.icons8.com/?size=100&id=123603&format=png&color=000000"
@@ -121,14 +118,13 @@ function techStack() {
               <p>React-Native</p>
             </div>
           </div>
-          <div className="tech-stack-row">
-            <div className="tech-stack-item">
-              <img
-                src="https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000"
-                alt="react"
-              />
-              <p>Tailwind</p>
-            </div>
+
+          <div className="tech-stack-item">
+            <img
+              src="https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000"
+              alt="react"
+            />
+            <p>Tailwind</p>
           </div>
         </div>
       </div>
