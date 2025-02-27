@@ -1,18 +1,24 @@
 .cards_section {
   z-index: 4;
 }
-
+.text_projects{
+  font-size: 15px;
+  color: darkgray;
+  margin-bottom: 50px;
+  text-align: center;
+  max-width: 50%;
+  margin-top: 50px;
+}
 .section-container {
   display: flex;
   flex-direction: column; /* Garante que os elementos fiquem em coluna */
   align-items: center; /* Centraliza os elementos horizontalmente */
-
 }
 
 .slider-container {
   width: 80%;
   position: relative;
-  margin-top: 120px;
+  margin-top: 30px;
   margin-left: -120px;
 }
 .slick-slide {
@@ -21,27 +27,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translate(30%);
+  transform: translate(35%);
 }
 
-.project-slide{
+.project-slide {
   height: 500px;
-  display: flex !important; 
+  display: flex !important;
   align-items: center;
   justify-content: center;
-  
+  outline: none;
 }
 
 /* Estilizando os botões de navegação */
 .slick-nav {
-  background-color: #0F6EFD;
+  background-color: #0f6efd;
   border: none;
-  color: #0F6EFD; /* Cor das setas de navegação */
+  color: #0f6efd; /* Cor das setas de navegação */
   font-size: 60px;
   z-index: 1;
   cursor: pointer;
 }
-
 
 .slick-prev {
   left: -40px;
@@ -58,7 +63,7 @@
 }
 
 .slick-dots li.slick-active button:before {
-  color: #0F6EFD; /* Cor do ponto ativo */
+  color: #0f6efd; /* Cor do ponto ativo */
 }
 
 /* Estilizando o carrossel para torná-lo responsivo */
@@ -69,16 +74,13 @@
   }
 
   .slick-center .project_element {
-    
   }
-  .project-slide{
+  .project-slide {
     width: 400px;
   }
- 
+
   .slick-slide {
     width: 400px;
     transform: translate(0%);
   }
-  
-  
 }

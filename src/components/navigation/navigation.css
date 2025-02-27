@@ -9,12 +9,12 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh; 
   z-index: 2; /* Z-index menor para ficar atrás do footer */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;  
+  padding-top: 20px;
+  margin-top: 110px;  
 }
 
 /* Estilos dos links de navegação */
@@ -66,8 +66,10 @@ body {
 /* Adiciona uma animação de destaque ao link ao passar o mouse */
 .nav-links a:hover {
   letter-spacing: 1px;
+}lnk-cont{
+  all: unset;
+  
 }
-
 @media (max-width: 768px) {
   .navigation_container {
     display: none;

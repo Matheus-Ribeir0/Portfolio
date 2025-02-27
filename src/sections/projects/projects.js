@@ -1,14 +1,20 @@
-import React, { useRef, useState, useEffect } from 'react';
-import Slider from 'react-slick';
-import Titles from '../../components/titles/titles';
-import Card from '../../components/cards/card';
-import { GoChevronLeft, GoChevronRight } from 'react-icons/go';
-import './projects.css';
+import React, { useRef, useState, useEffect } from "react";
+import Slider from "react-slick";
+import Titles from "../../components/titles/titles";
+import Card from "../../components/cards/card";
+import { GoChevronLeft, GoChevronRight } from "react-icons/go";
+import "./projects.css";
+import { useTranslation } from "react-i18next";
+import fullstackPage from "../../assets/fullstack_page.png";
+import dicesPage from "../../assets/dices_page.png";
+import chatPage from "../../assets/chat_page.png";
 
 const Projects = () => {
   const sliderRef = useRef(null);
-  const [slidesToShow, setSlidesToShow] = useState(window.innerWidth < 1000 ? 1.5 : 2.5);
-
+  const [slidesToShow, setSlidesToShow] = useState(
+    window.innerWidth < 1000 ? 1.5 : 2.5
+  );
+  const { t } = useTranslation();
   useEffect(() => {
     const handleResize = () => {
       setSlidesToShow(window.innerWidth < 1200 ? 1 : 2.5);
@@ -21,25 +27,58 @@ const Projects = () => {
   const cards = [
     {
       id: 0,
-      image: 'https://cdn.discordapp.com/attachments/881399184291397695/1334678444784484422/fullstack_page.png?ex=679d67aa&is=679c162a&hm=f20637c485ea7056bfe661b560ef8c2238c580d08c5596eae481c1cdc47705e8',
-      title: 'Fullstack Blog',
-      technologies: ["devicon-react-original", "devicon-nodejs-line", "devicon-postgresql-plain"],
-      description: "Desenvolvimento de um sistema de gerenciamento de tarefas usando React e Node.js."
+      image: fullstackPage,
+      title: "Fullstack Blog",
+      technologies: [
+        {
+          name: "React",
+          icon: "https://img.icons8.com/?size=100&id=047WZAFDnkVp&format=png&color=FFFFFF",
+        },
+        {
+          name: "PostgreSQL",
+          icon: "https://img.icons8.com/?size=100&id=Y9VdL7V5XPIc&format=png&color=FFFFFF",
+        },
+        {
+          name: "Node.js",
+          icon: "https://img.icons8.com/?size=100&id=FQlr_bFSqEdG&format=png&color=FFFFFF",
+        },
+      ],
+      description: t("blog_description"),
+      fullDescription: t("full_blog_description"),
+      url: "https://blog-client-olive.vercel.app/login",
+      repository:
+        "https://github.com/Matheus-Ribeir0/Blog-Client?tab=readme-ov-file",
     },
     {
       id: 1,
-      image: "https://via.placeholder.com/150",
-      title: 'Fullstack Blog',
-      technologies: ["Python", "Django", "PostgreSQL"],
-      description: "Aplicação web com Django para gerenciar dados de usuários com banco de dados PostgreSQL."
+      image: dicesPage,
+      title: "Dices Page",
+      technologies: [
+        {
+          name: "JavaScript",
+          icon: "https://img.icons8.com/?size=100&id=39854&format=png&color=FFFFFF",
+        },
+      ],
+      description: t("dices_description"),
+      fullDescription: t("full_dices_description"),
     },
     {
       id: 2,
-      image: "https://via.placeholder.com/150",
-      title: 'Fullstack Blog',
-      technologies: ["Angular", "TypeScript", "Firebase"],
-      description: "Sistema de autenticação e chat em tempo real com Firebase usando Angular."
-    }
+      image: chatPage,
+      title: "Simple Chat",
+      technologies: [
+        {
+          name: "React",
+          icon: "https://img.icons8.com/?size=100&id=047WZAFDnkVp&format=png&color=FFFFFF",
+        },
+        {
+          name: "Firebase",
+          icon: "https://img.icons8.com/?size=100&id=3Gh7IUPjoIx4&format=png&color=FFFFFF",
+        },
+      ],
+      description: t("chat_description"),
+      fullDescription: t("full_chat_description"),
+    },
   ];
 
   const settings = {
@@ -51,9 +90,9 @@ const Projects = () => {
     speed: 500,
     initialSlide: 0,
     dots: true,
-    customPaging: i => <div className="slick-dot"></div>,
+    customPaging: (i) => <div className="slick-dot"></div>,
     nextArrow: <GoChevronRight className="slick-nav" />,
-    prevArrow: <GoChevronLeft className="slick-nav" />
+    prevArrow: <GoChevronLeft className="slick-nav" />,
   };
 
   const handleCardClick = (index) => {
@@ -63,7 +102,8 @@ const Projects = () => {
   return (
     <div className="cards_section">
       <div className="section-container">
-        <Titles title="Projects" />
+        <Titles title={t("projects")} />
+        <p className="text_projects">{t("projects_message")}</p>
         <div className="slider-container">
           <Slider ref={sliderRef} {...settings}>
             {cards.map((card, index) => (
@@ -77,6 +117,9 @@ const Projects = () => {
                   title={card.title}
                   technologies={card.technologies}
                   description={card.description}
+                  fullDescription={card.fullDescription}
+                  url={card.url}
+                  repo={card.repository}
                 />
               </div>
             ))}

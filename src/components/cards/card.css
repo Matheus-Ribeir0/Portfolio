@@ -1,68 +1,213 @@
 .card_container {
- 
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 450px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  /* glassmorphism */
+  backdrop-filter: blur(6px) saturate(200%);
+  -webkit-backdrop-filter: blur(6px) saturate(200%);
+  background-color: rgba(70, 70, 70, 0.48);
+  border-radius: 12px;
+  transition: all 0.4s ease-in-out;
+}
+.card_container:hover {
+  box-shadow: 0 0 20px rgba(15, 110, 253, 1), 0 0 40px rgba(15, 110, 253, 0.8),
+    0 0 60px rgba(15, 110, 253, 0.6);
+  cursor: pointer;
+}
+
+.slick-center .card_container {
+  transform: scale(1.05); /* Zoom no elemento central */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+.slick-center .card_container:hover {
+  box-shadow: 0 0 20px rgba(15, 110, 253, 1), 0 0 40px rgba(15, 110, 253, 0.8),
+    0 0 60px rgba(15, 110, 253, 0.6);
+
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  height: 190px;
+}
+.above_image {
+  padding: 25px;
+  text-align: center;
+}
+
+.card_title {
+  margin: 10px;
+  color: #f9fdff;
+}
+
+.card_description {
+  color: #f9fdff;
+  font-size: 17;
+  margin: 5px;
+}
+
+.technologies {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-bottom: 2px;
+
+  justify-content: space-between;
+}
+#card_images {
+  width: 50px;
+}
+.image-tech {
+  width: 40px;
+}
+.card-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8); /* Fundo escuro transparente */
+}
+
+.MuiPaper-root {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  background: rgba(20, 20, 20, 0.9); /* Fundo escuro */
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+  position: relative;
+}
+
+/* Lado esquerdo - Imagem */
+.modal-image {
+  width: 35%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Lado direito - Conteúdo */
+.modal-content {
+  width: 44%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+/* Botão de fechar */
+.close-button {
+  position: absolute;
+  top: 15px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+/* Tecnologias */
+.technologies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.technologies div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.technologies img {
+  width: 40px;
+  height: 40px;
+}
+
+.technologies p {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+/* Botões */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.button-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-container a img {
+  width: 20px;
+}
+.url:hover {
+  color: #25aae1;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.action-button {
+  background: linear-gradient(45deg, #25aae1, #40e495);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.action-button:hover {
+  background: linear-gradient(45deg, #30dd8a, #2bb673);
+}
+
+@media (max-width: 1568px) {
+  .card_container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+
     border-radius: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 450px;
-    width: 350px;
+    width: 290px;
+    margin: 30px;
     /* glassmorphism */
     backdrop-filter: blur(6px) saturate(200%);
     -webkit-backdrop-filter: blur(6px) saturate(200%);
     background-color: rgba(70, 70, 70, 0.48);
     border-radius: 12px;
-
   }
-
-  .slick-center .card_container  {
-    transform: scale(1.05); /* Zoom no elemento central */
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
-  }
-
-  .image{
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    height: 190px;
-    
-  }
-  .above_image{
-    padding: 25px;
-    text-align: center;
-  }
-
-  .card_title {
-    margin: 10px;
-    color: #F9FDFF;
-  }
-
   .card_description {
-    color: #F9FDFF;
-    font-size: 17;
+    color: #f9fdff;
+    font-size: 15px;
     margin: 5px;
   }
-
-  .technologies {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+  .technologies img {
+    width: 30px;
+    height: 30px;
   }
-  #card_images {
-    width: 50px;
-    margin: 0 30px ;
+  .technologies p {
+    font-size: 10px;
+    color: #aaa;
+    margin-top: 5px;
   }
-  @media (max-width: 1568px) {
-    .card_container {
-      display: block;
-      justify-content: center;
-      align-items: center;
-      
-      border-radius: 20px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      height: 450px;
-      width: 290px;
-      margin: 30px;
-      /* glassmorphism */
-      backdrop-filter: blur(6px) saturate(200%);
-      -webkit-backdrop-filter: blur(6px) saturate(200%);
-      background-color: rgba(70, 70, 70, 0.48);
-      border-radius: 12px;
-    }
-  }
+}

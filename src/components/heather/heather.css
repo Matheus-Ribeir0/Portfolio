@@ -17,20 +17,25 @@ header {
 
 #language {
       /* Cor de fundo para a div */
+    display: flex;
+    align-items: center;
     padding: 10px;                 /* Adiciona espaçamento interno à div */
     border-radius: 5px;            /* Arredonda as bordas da div */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); margin-left: auto; 
+    cursor: pointer;
 }
 input[type=checkbox] {
+  
   height: 0;
   width: 0;
   visibility: hidden;
   position: absolute;
-  z-index: 1;
-      
+  z-index: -1; 
+  
 }
 
 label {
+  margin: 0px 10px;
   cursor: pointer;
   text-indent: -9999px;
   width: 60px;
