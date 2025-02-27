@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.565bd6d5.css",
+    "main.js": "/portfolio/static/js/main.70433aa6.js",
+    "static/media/foto_perfil_cropada-removebg-preview.jpg": "/portfolio/static/media/foto_perfil_cropada-removebg-preview.de286f090d44254dee14.jpg",
+    "static/media/fullstack_page.png": "/portfolio/static/media/fullstack_page.f070b8b25377731442e3.png",
+    "static/media/dices_page.png": "/portfolio/static/media/dices_page.b9f95877a43e575bf58d.png",
+    "static/media/chat_page.png": "/portfolio/static/media/chat_page.1fe2add52389a08d33e0.png",
+    "index.html": "/portfolio/index.html",
+    "main.565bd6d5.css.map": "/portfolio/static/css/main.565bd6d5.css.map",
+    "main.70433aa6.js.map": "/portfolio/static/js/main.70433aa6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.565bd6d5.css",
+    "static/js/main.70433aa6.js"
+  ]
+}
