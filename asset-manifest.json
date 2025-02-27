@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.565bd6d5.css",
-    "main.js": "/Portfolio/static/js/main.3c04bbbf.js",
+    "main.css": "/Portfolio/static/css/main.3ed25ab6.css",
+    "main.js": "/Portfolio/static/js/main.df5503ef.js",
     "static/media/foto_perfil_cropada-removebg-preview.jpg": "/Portfolio/static/media/foto_perfil_cropada-removebg-preview.de286f090d44254dee14.jpg",
     "static/media/fullstack_page.png": "/Portfolio/static/media/fullstack_page.f070b8b25377731442e3.png",
     "static/media/dices_page.png": "/Portfolio/static/media/dices_page.b9f95877a43e575bf58d.png",
     "static/media/chat_page.png": "/Portfolio/static/media/chat_page.1fe2add52389a08d33e0.png",
     "index.html": "/Portfolio/index.html",
-    "main.565bd6d5.css.map": "/Portfolio/static/css/main.565bd6d5.css.map",
-    "main.3c04bbbf.js.map": "/Portfolio/static/js/main.3c04bbbf.js.map"
+    "main.3ed25ab6.css.map": "/Portfolio/static/css/main.3ed25ab6.css.map",
+    "main.df5503ef.js.map": "/Portfolio/static/js/main.df5503ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.565bd6d5.css",
-    "static/js/main.3c04bbbf.js"
+    "static/css/main.3ed25ab6.css",
+    "static/js/main.df5503ef.js"
   ]
 }
