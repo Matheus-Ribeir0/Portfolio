@@ -90,9 +90,14 @@ const Projects = () => {
     speed: 500,
     initialSlide: 0,
     dots: true,
-    customPaging: (i) => <div className="slick-dot"></div>,
-    nextArrow: <GoChevronRight className="slick-nav" />,
-    prevArrow: <GoChevronLeft className="slick-nav" />,
+    responsive: [
+      {
+        breakpoint: 768, // Tamanho da tela que você quer mudar a configuração
+        settings: {
+          arrows: false, // Desabilita as setas em telas pequenas
+        },
+      },
+    ],
   };
 
   const handleCardClick = (index) => {

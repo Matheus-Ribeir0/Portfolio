@@ -196,10 +196,14 @@
     background-color: rgba(70, 70, 70, 0.48);
     border-radius: 12px;
   }
+  .above_image {
+    padding: 5px;
+  }
   .card_description {
     color: #f9fdff;
-    font-size: 15px;
-    margin: 5px;
+    font-size: 13px;
+
+    margin-bottom: 15px;
   }
   .technologies img {
     width: 30px;

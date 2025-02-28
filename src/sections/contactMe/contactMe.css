@@ -4,7 +4,7 @@
 .input-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px; /* Adiciona um espaço entre os elementos */
+  gap: 30px; /* Adiciona um espaço entre os elementos */
   width: 80%;
   margin-top: 150px;
 }
@@ -43,6 +43,9 @@
   align-items: center;
 }
 @media (max-width: 768px) {
+  .contact-me {
+    height: fit-content;
+  }
   .input-container {
     display: flex;
     flex-direction: column;

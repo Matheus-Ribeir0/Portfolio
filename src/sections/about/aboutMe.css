@@ -22,7 +22,6 @@
 
 .about-text{
     width: 771px;
-    height: 579px;
 
     margin: 50px;
     font-size: 22px;
@@ -33,14 +32,14 @@
 }
 
 .picture {
-    width: 310px;
+    width: 333px;
     border-radius: 50%;
 }
 
 @media (max-width: 768px) {
     .about-me {
         display: block;
-        height: 110vh;
+        height: fit-content;
     }
     .about-picture{
         margin: 20px auto;

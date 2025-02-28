@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import "./aboutMe.css";
 import Titles from "../../components/titles/titles";
-import profilePicture from "../../assets/foto_perfil_cropada-removebg-preview.jpg"; // Importe a imagem da pasta assets
+import profilePicture from "../../assets/foto_perfil_cropada-removebg-preview-removebg.png"; // Importe a imagem da pasta assets
 
 const AboutMe = (props) => {
     const { t } = useTranslation();
