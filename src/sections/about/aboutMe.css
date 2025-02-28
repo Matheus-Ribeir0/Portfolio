@@ -19,10 +19,9 @@
     justify-content: center;
     align-items: center;
 }
-
+/* text area */
 .about-text{
     width: 771px;
-
     margin: 50px;
     font-size: 22px;
 }
