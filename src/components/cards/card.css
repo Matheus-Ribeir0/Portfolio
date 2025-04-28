@@ -101,11 +101,12 @@
   height: 100%;
   background-size: cover;
   background-position: center;
+  object-fit: cover;
 }
 
 /* Lado direito - Conteúdo */
 .modal-content {
-  width: 44%;
+  width: 63vh;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -178,21 +179,32 @@
   cursor: pointer;
 }
 
-.action-button {
-  background: linear-gradient(45deg, #25aae1, #40e495);
+.action-button {  
+  background: linear-gradient(270deg, #25aae1, #40a8e4, #30dd8a, #2bb673);
+  background-size: 400% 400%;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   color: white;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
   text-transform: uppercase;
+  animation: gradientAnimation 1.5s ease infinite;
 }
 
-.action-button:hover {
-  background: linear-gradient(45deg, #30dd8a, #2bb673);
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
+
+
 
 @media (max-width: 1568px) {
   .card_container {
@@ -216,6 +228,9 @@
     padding: 5px;
   }
 
+  
+  
+
   .card_description {
     color: #f9fdff;
     font-size: 13px;
@@ -233,4 +248,22 @@
     color: #aaa;
     margin-top: 5px;
   }
+}.repo-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.repo-button:hover {
+  color: #6db2fc; 
+  text-decoration: underline;
+}
+
+.repo-button img {
+  width: 20px;
+  height: 20px;
 }

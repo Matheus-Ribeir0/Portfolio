@@ -61,7 +61,7 @@ function Card(props) {
                   <button className="action-button">Visitar Página</button>
                 </a>
                 <a
-                  href={props.repository}
+                  href={props.repo}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="repo-button"
@@ -69,8 +69,8 @@ function Card(props) {
                   <img
                     src="https://img.icons8.com/?size=100&id=7867&format=png&color=FFFFFF"
                     alt="Repo Icon"
-                  />
-                  {t("link_to_repository")}
+                  />{"  "}
+                  {props.title}
                 </a>
               </div>
             </div>

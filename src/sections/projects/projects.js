@@ -74,7 +74,7 @@ const Projects = () => {
       ],
       description: t("capputenno_store"),
       fullDescription: t("capputenno_store"),
-      url: "https://capputenno-client.vercel.app/n",
+      url: "https://capputenno-client.vercel.app",
       repository:
         "https://github.com/Matheus-Ribeir0/Capputenno-Client",
     },
