@@ -12,6 +12,7 @@
   border-radius: 12px;
   transition: all 0.4s ease-in-out;
 }
+
 .card_container:hover {
   box-shadow: 0 0 20px rgba(15, 110, 253, 1), 0 0 40px rgba(15, 110, 253, 0.8),
     0 0 60px rgba(15, 110, 253, 0.6);
@@ -19,9 +20,12 @@
 }
 
 .slick-center .card_container {
-  transform: scale(1.05); /* Zoom no elemento central */
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  transform: scale(1.05);
+  /* Zoom no elemento central */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  /* Sombra para destacar */
 }
+
 .slick-center .card_container:hover {
   box-shadow: 0 0 20px rgba(15, 110, 253, 1), 0 0 40px rgba(15, 110, 253, 0.8),
     0 0 60px rgba(15, 110, 253, 0.6);
@@ -33,7 +37,9 @@
   width: 100%;
   border-radius: 20px 20px 0 0;
   height: 190px;
+  object-fit: cover;
 }
+
 .above_image {
   padding: 25px;
   text-align: center;
@@ -58,17 +64,22 @@
 
   justify-content: space-between;
 }
+
 #card_images {
   width: 50px;
 }
+
 .image-tech {
-  width: 40px;
+  width: 20px;
+  margin: 2px;
 }
+
 .card-modal {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.8); /* Fundo escuro transparente */
+  background: rgba(0, 0, 0, 0.8);
+  /* Fundo escuro transparente */
 }
 
 .MuiPaper-root {
@@ -76,7 +87,8 @@
   height: 80vh;
   display: flex;
   flex-direction: row;
-  background: rgba(20, 20, 20, 0.9); /* Fundo escuro */
+  background: rgba(20, 20, 20, 0.9);
+  /* Fundo escuro */
   border-radius: 15px;
   overflow: hidden;
   color: white;
@@ -149,14 +161,17 @@
   justify-content: center;
   gap: 15px;
 }
+
 .button-container a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .button-container a img {
   width: 20px;
 }
+
 .url:hover {
   color: #25aae1;
   text-decoration: underline;
@@ -196,19 +211,23 @@
     background-color: rgba(70, 70, 70, 0.48);
     border-radius: 12px;
   }
+
   .above_image {
     padding: 5px;
   }
+
   .card_description {
     color: #f9fdff;
     font-size: 13px;
 
     margin-bottom: 15px;
   }
+
   .technologies img {
     width: 30px;
     height: 30px;
   }
+
   .technologies p {
     font-size: 10px;
     color: #aaa;

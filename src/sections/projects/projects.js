@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import fullstackPage from "../../assets/fullstack_page.png";
 import dicesPage from "../../assets/dices_page.png";
 import chatPage from "../../assets/chat_page.png";
+import capputeeno from "../../assets/capputenno_store.png";
 
 const Projects = () => {
   const sliderRef = useRef(null);
@@ -51,6 +52,34 @@ const Projects = () => {
     },
     {
       id: 1,
+      image: capputeeno,
+      title: "Capputenno Store",
+      technologies: [
+        {
+          name: "React",
+          icon: "https://img.icons8.com/?size=100&id=047WZAFDnkVp&format=png&color=FFFFFF",
+        },
+        {
+          name: "Typescript",
+          icon: "https://img.icons8.com/?size=100&id=cHBUT9SmrD2V&format=png&color=FFFFFF",
+        },
+        {
+          name: "Node.js",
+          icon: "https://img.icons8.com/?size=100&id=FQlr_bFSqEdG&format=png&color=FFFFFF",
+        },
+        {
+          name: "Tailwind",
+          icon: "https://img.icons8.com/?size=100&id=UpSCHTwpywad&format=png&color=FFFFFF",
+        },
+      ],
+      description: t("capputenno_store"),
+      fullDescription: t("capputenno_store"),
+      url: "https://capputenno-client.vercel.app/n",
+      repository:
+        "https://github.com/Matheus-Ribeir0/Capputenno-Client",
+    },
+    {
+      id: 2,
       image: dicesPage,
       title: "Dices Page",
       technologies: [
@@ -63,7 +92,7 @@ const Projects = () => {
       fullDescription: t("full_dices_description"),
     },
     {
-      id: 2,
+      id: 3,
       image: chatPage,
       title: "Simple Chat",
       technologies: [

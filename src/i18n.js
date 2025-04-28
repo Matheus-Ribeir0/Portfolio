@@ -42,6 +42,8 @@ i18n
             "A simple community chat where users can send messages and see messages sent by other users.",
           full_chat_description:
             "A simple community chat where users can send messages and see messages sent by other users.",
+          capputenno_store:
+            "Fictional store created for a fullstack challenge, using local storage to save user preference information, item filters, and sorting.",
           link_to_repository: "Link to repository",
           message_return:
             "Message sent successfully! I'll get back to you soon. See you! 😀",
@@ -87,6 +89,8 @@ i18n
             "Chat comunitário simples, onde o usuário pode enviar mensagens e ver as mensagens enviadas por outros usuários.",
           full_chat_description:
             "Chat comunitário simples, onde o usuário pode enviar mensagens e ver as mensagens enviadas por outros usuários",
+          capputenno_store:
+            "Loja fictícia criada por um desafio fullstack, utilizando local storage para guardar informações de preferências do usuários, filtros de itens e ordenização.",
           link_to_repository: "Link para o repositório",
           message_return:
             "Mensagem enviado com sucesso! em breve entrarei em contato. Até logo! 😀",
