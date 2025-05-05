@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.8c0a74fb.css",
-    "main.js": "/Portfolio/static/js/main.a4c8f124.js",
+    "main.css": "/Portfolio/static/css/main.e0a162b7.css",
+    "main.js": "/Portfolio/static/js/main.e76251c6.js",
+    "static/media/capputenno_store.png": "/Portfolio/static/media/capputenno_store.181013ab3bc101d4d878.png",
     "static/media/foto_perfil_cropada-removebg-preview-removebg.png": "/Portfolio/static/media/foto_perfil_cropada-removebg-preview-removebg.d0d87d5b02532ce65150.png",
     "static/media/fullstack_page.png": "/Portfolio/static/media/fullstack_page.f070b8b25377731442e3.png",
     "static/media/dices_page.png": "/Portfolio/static/media/dices_page.b9f95877a43e575bf58d.png",
     "static/media/chat_page.png": "/Portfolio/static/media/chat_page.1fe2add52389a08d33e0.png",
     "index.html": "/Portfolio/index.html",
-    "main.8c0a74fb.css.map": "/Portfolio/static/css/main.8c0a74fb.css.map",
-    "main.a4c8f124.js.map": "/Portfolio/static/js/main.a4c8f124.js.map"
+    "main.e0a162b7.css.map": "/Portfolio/static/css/main.e0a162b7.css.map",
+    "main.e76251c6.js.map": "/Portfolio/static/js/main.e76251c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c0a74fb.css",
-    "static/js/main.a4c8f124.js"
+    "static/css/main.e0a162b7.css",
+    "static/js/main.e76251c6.js"
   ]
 }
